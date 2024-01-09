@@ -1,0 +1,155 @@
+body {
+    padding: 0;
+    margin: 0;
+    min-height: 100vh;
+}
+
+header {
+    background-image: linear-gradient(180deg, white, rgb(206, 206, 206));
+    padding: 30px 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+header img {
+    width: 30px;
+}
+
+header span {
+    font-weight: bold;
+    font-size: 1.5em;
+    margin-left: 20px;
+}
+
+main {
+    background-color: #EEF2FF;
+    padding: 30px 40px;
+    min-height: calc(100vh - 60px);
+}
+
+main h1 {
+    margin: 0;
+    font-weight: bold;
+    font-size: 1.7em;
+}
+
+section {
+    max-width: 1000px;
+    margin: auto;
+}
+
+.container {
+    margin-top: 20px;
+    background-color: white;
+    border-radius: 0 0 5px 5px;
+}
+
+.recipient-label {
+    background-image: linear-gradient(180deg, #4276FD, #1954F1);
+    border-radius: 5px 5px 0 0;
+    padding: 10px 30px;
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.recipient-label img {
+    width: 70px;
+}
+
+.recipient-label span {
+    color: white;
+    font-weight: bold;
+    font-size: 1.2em;
+    margin-left: 10px;
+}
+
+.chat-history-container {
+    padding: 20px 30px;
+}
+
+.recipient-chatbox-container,
+.sender-chatbox-container {
+    width: max-content;
+}
+
+.sender-chatbox-container {
+    margin-left: auto;
+}
+
+.recipient-chatbox-container h3,
+.sender-chatbox-container h3 {
+    font-size: 0.9em;
+    margin: 0;
+}
+
+.sender-chatbox-container h3 {
+    text-align: right;
+}
+
+.recipient-chatbox-container p,
+.sender-chatbox-container p {
+    font-size: 0.9em;
+    margin: 5px 0;
+    background-color: #EAF3FF;
+    border-radius: 3px;
+    padding: 10px 20px;
+    font-weight: 500;
+}
+
+.recipient-chatbox-container span,
+.sender-chatbox-container span {
+    font-size: 0.75em;
+    color: #A4A4A4;
+    font-weight: 600;
+    display: block;
+}
+
+.sender-chatbox-container span {
+    text-align: right;
+}
+
+.send-message-container {
+    border-top: 1px solid grey;
+    padding: 20px;
+    border-radius: 0 0 5px 5px;
+}
+
+.send-message-container input {
+    width: 100%;
+    box-sizing: border-box;
+    font-weight: bold;
+    color: #838383;
+    border: none;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+
+.send-message-container button {
+    background-image: linear-gradient(180deg, #4276FD, #1954F1);
+    color: white;
+    cursor: pointer;
+    border-radius: 3px;
+    border: none;
+    padding: 10px 20px;
+    display: flex;
+    align-items: center;
+    margin-left: auto;
+}
+
+.send-message-container button img {
+    width: 15px;
+    margin-right: 10px;
+}
+
+footer {
+    background-color: #031C3E;
+    padding: 30px 0;
+    color: #707A8A;
+    font-weight: semibold;
+    text-align: center;
+    font-size: 1.2em;
+    width: 100%;
+}
