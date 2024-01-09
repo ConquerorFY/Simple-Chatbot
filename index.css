@@ -73,6 +73,8 @@ section {
 .recipient-chatbox-container,
 .sender-chatbox-container {
     width: max-content;
+    max-width: 100%;
+    word-wrap: break-word;
 }
 
 .sender-chatbox-container {

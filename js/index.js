@@ -2,8 +2,8 @@ import { createRecipientMessage, createSenderMessage } from "./message.js";
 
 const handleMessage = () => {
     const message = txtMessage.value;
-    createSenderMessage(message);
     if (message.trim()) {
+        createSenderMessage(message);
         if (/^Jamie$/i.test(message)) {
             createRecipientMessage("Can I help you?");
             return;
@@ -30,4 +30,9 @@ const handleMessage = () => {
 };
 
 btnSend.addEventListener('click', handleMessage);
+txtMessage.addEventListener('keydown', (event) => {
+    if (event.key === "Enter" || event.keyCode === 13) {
+        handleMessage();
+    }
+})
 
